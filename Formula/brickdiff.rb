@@ -5,21 +5,21 @@
 class Brickdiff < Formula
   desc ""
   homepage ""
-  version "0.3.2"
+  version "0.3.3"
   license "GPL3.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.3.2/brickdiff_0.3.2_Darwin_arm64.zip"
-      sha256 "186d380915fd67422251a02d8436f80710fd2909321bb6a4d7fadcd7bee23241"
+      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.3.3/brickdiff_0.3.3_Darwin_arm64.zip"
+      sha256 "f6e8f95f9d7192822e4932f57d17c70892b34a04c3d7ff36f8f9b2b79537b636"
 
       def install
         bin.install "brickdiff"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.3.2/brickdiff_0.3.2_Darwin_x86_64.zip"
-      sha256 "8b6ee6e68c1e183f7c9d3b95118496f82d1dfc6538b871f3c23a86edd9706555"
+      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.3.3/brickdiff_0.3.3_Darwin_x86_64.zip"
+      sha256 "b3eeb70303fa2796794bb16fab97865cc9edef0393ebfe7ee30c6a41f55c6b23"
 
       def install
         bin.install "brickdiff"
@@ -29,16 +29,16 @@ class Brickdiff < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.3.2/brickdiff_0.3.2_Linux_arm64.zip"
-      sha256 "7c0ba7ff5f734447d41d6eb84f5616fecba2350247f1086b739ae7bd307467d7"
+      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.3.3/brickdiff_0.3.3_Linux_arm64.zip"
+      sha256 "012be8cb290313fc934db91e3d4fa0adaa55f0cd7d965d6168bc4014944938f4"
 
       def install
         bin.install "brickdiff"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.3.2/brickdiff_0.3.2_Linux_x86_64.zip"
-      sha256 "5a70b69cefd2303b8b4e74ed11c3ea3e91a50376f90469438e28045f6e218ebc"
+      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.3.3/brickdiff_0.3.3_Linux_x86_64.zip"
+      sha256 "c5b54cda49bccf952d290298ed7d1d2444778b89b7f9a0be775fac998b75c075"
 
       def install
         bin.install "brickdiff"
