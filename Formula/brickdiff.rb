@@ -5,21 +5,21 @@
 class Brickdiff < Formula
   desc ""
   homepage ""
-  version "0.6.2"
+  version "0.7.0"
   license "GPL3.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.6.2/brickdiff_0.6.2_Darwin_arm64.zip", using: CurlDownloadStrategy
-      sha256 "8bc8d39c3c99848f4e9fc59fee256e824a59e61570eb73c4e99b8282ce479736"
+      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.7.0/brickdiff_Darwin_arm64.zip", using: CurlDownloadStrategy
+      sha256 "c452dc53a8d11b64f2a4b19c6cba77581c7dd340ad5a30cfec81de6969da47d7"
 
       def install
         bin.install "brickdiff"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.6.2/brickdiff_0.6.2_Darwin_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "776600a54ba7d2a931999ad83aa9f634508ecdc8e4a6f3bba03aaf91d6ab9f00"
+      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.7.0/brickdiff_Darwin_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "4d8a867ed77631069662d43bbe6388aacec8518d8d21687bac95057dcf15ce59"
 
       def install
         bin.install "brickdiff"
@@ -29,16 +29,16 @@ class Brickdiff < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.6.2/brickdiff_0.6.2_Linux_arm64.zip", using: CurlDownloadStrategy
-      sha256 "353d802b09612faf984c6ebd7418abdc2f3492537cd625d027cffdb781731502"
+      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.7.0/brickdiff_Linux_arm64.zip", using: CurlDownloadStrategy
+      sha256 "36e0d8a189d393847564fdfd86c80bcac9f8905e4a2509e269b987ed651524da"
 
       def install
         bin.install "brickdiff"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.6.2/brickdiff_0.6.2_Linux_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "1f9c2d5140e3aec161c94f4d2f727d719324830e1caa42e9c1064fd0e27e3702"
+      url "https://github.com/Geekgasm/brickdiff/releases/download/v0.7.0/brickdiff_Linux_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "d30d22262e8a303a3c46f2191715e18224a4deacff384cf9a7141dac171335cf"
 
       def install
         bin.install "brickdiff"
